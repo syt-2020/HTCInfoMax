@@ -1,19 +1,19 @@
 # HTCInfoMax
 The code is for reviewing paper "HTCInfoMax: A Global Model for Hierarchical Text Classification via Information Maximization"
 
-## Requirement
+## Requirements
 + Python >= 3.6
 + torch >= 0.4.1
 + numpy >= 1.17.4
 
 ## Preparation before train the model
-### Data Preprocess
+### Data preprocess
 #### dataset
 + Please get the original dataset of [RCV1-V2](http://www.ai.mit.edu/projects/jmlr/papers/volume5/lewis04a/lyrl2004_rcv1v2_README.htm) and [WoS](https://github.com/kk7nc/HDLTex)
 + use data.preprocess_rcv1_train.py and data.preprocess_rcv1_test.py to preprocess the RCV1-V2 dataset for hierarchical text classification.
 + use data.preprocess_wos.py to preprocess the WoS dataset for hierarchical text classification.
 
-### Generate Prior Probability
+### Generate prior probability
 + run helper.hierarchy_tree_statistic_rcv1.py to generate the prior probability between parent-child pair of the label hierarchy in the training set of RCV1-V2.
 + run helper.hierarchy_tree_statistic_wos.py to generate the prior probability between parent-child pair of the label hierarchy in the training set of WoS.
 
